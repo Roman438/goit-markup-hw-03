@@ -22,43 +22,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <div class="container">
-          <div class="header-container">
-            <a href="./index.html" lang="en" class="logo"
-              >Web<span>Studio</span></a
-            >
-            <nav>
-              <ul class="header-list">
-                <li><a href="./index.html" class="header-nav">Студія</a></li>
-                <li>
-                  <a href="./portfolio.html" class="header-nav">Портфоліо</a>
-                </li>
-                <li><a href="" class="header-nav">Контакти</a></li>
-              </ul>
-            </nav>
-          </div>
-          <ul class="header-contacts">
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html" lang="en" class="logo">Web<span>Studio</span></a>
+        <nav>
+          <ul class="header-list">
+            <li><a href="./index.html" class="header-nav">Студія</a></li>
             <li>
-              <a href="mailto:info@devstudio.com" class="tel-mail"
-                >info@devstudio.com</a
-              >
+              <a href="./portfolio.html" class="header-nav">Портфоліо</a>
             </li>
-            <li>
-              <a href="tel:+380961111111" class="tel-mail">+38 096 111 11 11</a>
-            </li>
+            <li><a href="" class="header-nav">Контакти</a></li>
           </ul>
-        </div>
+        </nav>
+        <ul class="header-contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="tel-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="tel-mail">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <div class="main-container">
-        <section class="hero">
+      <section class="hero">
+        <div class="container">
           <h1>Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button">Замовити послугу</button>
-        </section>
-        <section class="features">
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
           <ul>
             <li>
@@ -89,8 +85,10 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section class="our-works">
+        </div>
+      </section>
+      <section class="our-works">
+        <div class="container">
           <h2>Чим ми займаємося</h2>
           <ul>
             <li>
@@ -118,8 +116,10 @@
               />
             </li>
           </ul>
-        </section>
-        <section class="our-team">
+        </div>
+      </section>
+      <section class="our-team">
+        <div class="container">
           <h2>Наша команда</h2>
           <ul>
             <li>
@@ -143,11 +143,11 @@
               <p lang="en">UI Designer</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <div class="footer-container">
+      <div class="footer-container container">
         <a href="./index.html" lang="en" class="logo">Web<span>Studio</span></a>
         <address class="address">
           <ul>
