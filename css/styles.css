@@ -59,6 +59,7 @@ p {
 img {
   border: none;
   outline: none;
+  display: block;
 }
 
 .container {
@@ -72,6 +73,9 @@ img {
 
 .header {
   background-color: var(--main-white-color);
+  border-bottom: 1px solid var(--header-border-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -91,8 +95,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-list {
@@ -139,10 +141,8 @@ img {
 .hero {
   background-color: var(--background-black);
   text-align: center;
-}
-
-.hero .container {
-  padding: 200px 250px 200px 250px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero h1 {
@@ -152,7 +152,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 700px;
 }
 
 .hero button {
@@ -181,7 +182,7 @@ img {
   padding-bottom: 94px;
 }
 
-.features .container {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -190,6 +191,10 @@ img {
 .our-works ul {
   display: flex;
   gap: 30px;
+}
+
+.features li {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .features h3 {
@@ -244,7 +249,8 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding: 30px 0px 10px 0px;
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .our-team p {
@@ -277,15 +283,8 @@ img {
 .portfolio {
   background-color: var(--main-white-color);
   display: flex;
-}
-
-.portfolio .container {
   padding-bottom: 94px;
   padding-top: 94px;
-}
-
-.portfolio img {
-  display: block;
 }
 
 .portfolio-button {
@@ -306,6 +305,7 @@ img {
 
 .portfolio-picture {
   border: 1px solid var(--border-color);
+  border-top: none;
   padding: 20px 24px 20px 24px;
 }
 
@@ -328,9 +328,6 @@ img {
 
 .footer {
   background-color: var(--background-black);
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
